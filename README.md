@@ -26,7 +26,7 @@ Example :
 
 ### output :
 
-return msg.payloed.transitTime in minutes.
+return msg.payloed.transitTime in hours.
 
 ## Test
 

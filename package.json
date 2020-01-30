@@ -1,0 +1,44 @@
+{
+  "author": {
+    "name": "lav@yoctu.com"
+  },
+  "bugs": {
+    "url": "https://github.com/lvenier/node-red-contrib-transitTime/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-node": "*",
+    "eslint-plugin-promise": "*",
+    "eslint-config-standard": "*",
+    "eslint-plugin-standard": "*"
+  },
+  "deprecated": false,
+  "description": "node-red bin packing",
+  "homepage": "https://github.com/lvenier/node-red-contrib-transitTime#readme",
+  "keywords": [
+    "node-red",
+    "transit",
+    "logistics"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "node-red-contrib-transitTime",
+  "node-red": {
+    "nodes": {
+      "binpacking": "index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lvenier/node-red-contrib-transitTime.git"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js index.js",
+    "lint-fix": "eslint --fix --ext .js index.js",
+    "test": "npm run lint"
+  },
+  "version": "0.9.0"
+}

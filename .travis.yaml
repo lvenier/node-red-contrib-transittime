@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - 12
+
+install:
+  - npm install
+
+script:
+  - npm test
+
+notifications:
+  email:
+    recipients:
+      - lav@yoctu.com
+
+deploy:
+  provider: npm
+  email: "lav@yoctu.com"
+  api_key: "0acc99fe-348a-4e26-b031-7e5ee56da913"
+  edge: true
+  on:
+    branch: master

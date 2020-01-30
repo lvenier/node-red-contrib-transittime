@@ -11,10 +11,10 @@ Transit Time Palette for Node-Red
 
 ### inputs :
 
-msg.payload.distance: trip distance in km.
+msg.payload.distance: trip distance in kms.
 
 msg.payload.config: the required vehicle and trip information : 
-- speed in km/min
+- speed in kms/hours
 - drivingTime in hours
 - maxDrivingTime in hours
 - breakTime in hours

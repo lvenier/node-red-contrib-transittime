@@ -1,4 +1,4 @@
-# node-red-contrib-transitTime
+# node-red-contrib-transittime
 
 [![Build Status](https://api.travis-ci.org/lvenier/node-red-contrib-transittime.svg?branch=master)](https://travis-ci.org/lvenier/node-red-contrib-transitTime)
 [![npm version](http://img.shields.io/npm/v/node-red-contrib-transittime.svg?style=flat)](https://npmjs.org/package/node-red-contrib-transittime "View this project on npm")

@@ -27,7 +27,7 @@
   "name": "node-red-contrib-transittime",
   "node-red": {
     "nodes": {
-      "binpacking": "index.js"
+      "transittime": "index.js"
     }
   },
   "repository": {

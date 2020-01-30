@@ -15,7 +15,7 @@
     "eslint-plugin-standard": "*"
   },
   "deprecated": false,
-  "description": "node-red bin packing",
+  "description": "node-red transit time calc",
   "homepage": "https://github.com/lvenier/node-red-contrib-transitTime#readme",
   "keywords": [
     "node-red",

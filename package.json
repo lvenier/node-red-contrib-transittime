@@ -39,5 +39,5 @@
     "lint-fix": "eslint --fix --ext .js index.js",
     "test": "npm run lint"
   },
-  "version": "0.9.7"
+  "version": "0.9.8"
 }

@@ -23,7 +23,7 @@ module.exports = function (RED) {
       if (msg.payload.config) {
         var config = msg.payload.config
         if (config.speed > 0 && config.drivingTime > 0 && config.maxDrivingTime > 0) {
-          config.speed = config.speed * 60 
+          config.speed = config.speed * 60
           const nbHour = Math.floor(msg.payload.distance / config.speed)
           const nbPeriod = Math.floor(nbHour / config.drivingTime)
           const nbRestTime = Math.floor(nbHour / config.maxDrivingTime)

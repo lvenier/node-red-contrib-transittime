@@ -1,4 +1,10 @@
 # node-red-contrib-transitTime
+
+[![Build Status](https://api.travis-ci.org/lvenier/node-red-contrib-transittime.svg?branch=master)](https://travis-ci.org/lvenier/node-red-contrib-transitTime)
+[![npm version](http://img.shields.io/npm/v/node-red-contrib-transittime.svg?style=flat)](https://npmjs.org/package/node-red-contrib-transittime "View this project on npm")
+[![Github Issues](http://img.shields.io/github/issues/lvenier/node-red-contrib-transitTime)](https://github.com/lvenier/node-red-contrib-transitTime/issues)
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+
 Transit Time Palette for Node-Red
 
 ## Input / Output
@@ -9,12 +15,13 @@ msg.payload.distance: trip distance in km.
 
 msg.payload.config: the required vehicle and trip information : 
 - speed in km/min
-- drivingTime in minutes
-- maxDrivingTime in minutes
-- breakTime in minutes
-- restTime in minutes
+- drivingTime in hours
+- maxDrivingTime in hours
+- breakTime in hours
+- restTime in hours
 
 Example : 
+
 ```{speed: 1.16, drivingTime: 240, maxDrivingTime: 720, breakTime:30, restTime:480}```
 
 ### output :

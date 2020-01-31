@@ -1,6 +1,7 @@
 {
   "author": {
-    "name": "lav@yoctu.com"
+    "email": "lav@yoctu.com",
+    "name": "LaV"
   },
   "bugs": {
     "url": "https://github.com/lvenier/node-red-contrib-transittime/issues"

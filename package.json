@@ -20,6 +20,8 @@
   "keywords": [
     "node-red",
     "transit",
+    "transittime",
+    "yoctu",
     "logistics"
   ],
   "license": "ISC",
@@ -39,5 +41,5 @@
     "lint-fix": "eslint --fix --ext .js index.js",
     "test": "npm run lint"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

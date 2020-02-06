@@ -35,6 +35,11 @@ It provides 2 examples :
 - timestamp with predefined set of data
 - api get/post to input values
 
+## Demo
+UI : https://transittime.yoctu.com/ui
+
+API : curl -X POST https://transittime.yoctu.com/api/ -H 'Content-type: application/json' -d '{ "distance": 500, "config": {"speed":60,"drivingTime":240,"maxDrivingTime":720,"breakTime":30,"restTime":480}}'
+
 ## Contributors and Thanks
 
 Thank you

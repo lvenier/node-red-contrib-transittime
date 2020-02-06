@@ -42,5 +42,5 @@
     "lint-fix": "eslint --fix --ext .js index.js",
     "test": "npm run lint"
   },
-  "version": "1.0.5"
+  "version": "1.0.6"
 }

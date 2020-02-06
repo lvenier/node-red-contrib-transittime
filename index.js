@@ -23,11 +23,12 @@ module.exports = function (RED) {
       if (msg.payload.config) {
         var config = msg.payload.config
         if (config.speed > 0 && config.drivingTime > 0 && config.maxDrivingTime > 0) {
-          config.speed = config.speed * 60
+          config.speed = Math.floor(config.speed)
           const nbHour = Math.floor(msg.payload.distance / config.speed)
           const nbPeriod = Math.floor(nbHour / config.drivingTime)
           const nbRestTime = Math.floor(nbHour / config.maxDrivingTime)
           result.transitTime = (config.drivingTime * nbPeriod) + config.breakTime * nbPeriod + (config.restTime - config.breakTime) * nbRestTime + (msg.payload.distance - config.drivingTime * nbPeriod * config.speed) / config.speed
+          result.transitTimeHuman = result.transitTime.toFixed(2)
         } else TransitTimeError(node, 2, 'speed, drivingTime, maxDrivingTime should be more 0')
       } else TransitTimeError(node, 1, 'unknown vehicule type')
       msg.payload = result

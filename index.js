@@ -30,7 +30,7 @@ module.exports = function (RED) {
           result.transitTime = (config.drivingTime * nbPeriod) + config.breakTime * nbPeriod + (config.restTime - config.breakTime) * nbRestTime + (msg.payload.distance - config.drivingTime * nbPeriod * config.speed) / config.speed
           result.transitTimeHuman = result.transitTime.toFixed(2)
           result.errorCode = 0
-          result.errorMsg= ''
+          result.errorMsg = ''
         } else TransitTimeError(node, 2, 'speed, drivingTime, maxDrivingTime should be more 0')
       } else TransitTimeError(node, 1, 'unknown vehicule type')
       msg.payload = result
